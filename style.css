@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: #13183F;
+    --main-font-family: "Plus Jakarta Sans", sans-serif;
+    --extra-bold: 800;
+    --bold: 700;
+    --medium: 500;
+    --heading-xl: 56px;
+    --heading-l: 40px;
+    --heading-m: 32px;
+    --heading-s: 24px;
+    --body-m: 18px;
+    --body-s: 16px;
+    --btn-padding: 14px 31px;
+    --btn-radius: 30px;
+    --main-transition: all 0.2s ease-in;
+    --hover-filter: opacity(0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-family);
+}
+
+/* HEADER */
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 165px;
+}
+
+.logo {
+    font-weight: var(--extra-bold);
+    font-size: var(--heading-m);
+    color: var(--primary-color);
+}
+
+.btn_nav {
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.btn_nav:hover {
+    filter: var(--hover-filter);
+}
