@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #13183F;
+    --secondary-color: #83869A;
     --main-font-family: "Plus Jakarta Sans", sans-serif;
     --extra-bold: 800;
     --bold: 700;
@@ -46,8 +47,51 @@
     border-radius: var(--btn-radius);
     cursor: pointer;
     transition: var(--main-transition);
+    z-index: 1;
 }
 
 .btn_nav:hover {
     filter: var(--hover-filter);
+}
+
+/* HERO */
+.hero_text {
+    margin-top: 68.6px;
+    width: 30%;
+    margin-left: 165px;
+}
+
+.hero_title {
+    font-size: var(--heading-xl);
+    font-weight: var(--extra-bold);
+    color: var(--primary-color);
+    margin-bottom: 29px;
+}
+
+.hero_body {
+    color: var(--secondary-color);
+    font-size: var(--body-m);
+    font-weight: var(--medium);
+    margin-bottom: 40px;
+}
+
+.hero_btn {
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    transition: var(--main-transition);
+    cursor: pointer;
+    background: linear-gradient(to top, #F02AA6, #FF6848);
+    color: #FFF;
+    width: 33%;
+}
+
+.hero_btn:hover {
+    filter: var(--hover-filter);
+}
+
+.hero_img {
+    width: 50%;
+    position: absolute;
+    right: -14%;
+    top: -12%;
 }
