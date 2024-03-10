@@ -27,6 +27,10 @@
     font-family: var(--main-font-family);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* HEADER */
 .main_nav {
     display: flex;
