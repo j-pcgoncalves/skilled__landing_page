@@ -16,7 +16,7 @@
     --btn-padding: 14px 31px;
     --btn-radius: 30px;
     --main-transition: all 0.2s ease-in;
-    --hover-filter: opacity(0.8);
+    --hover-filter: brightness(1.2);
     --card-padding: 64px 32px 40px 32px;
 }
 
