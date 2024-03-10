@@ -57,7 +57,7 @@
 /* HERO */
 .hero_text {
     margin-top: 185px;
-    width: 30%;
+    width: 31%;
     margin-left: 165px;
 }
 
@@ -82,17 +82,17 @@
     cursor: pointer;
     background: linear-gradient(to top, #F02AA6, #FF6848);
     color: #FFF;
-    width: 34%;
+    width: 33%;
 }
 
 .hero_btn:hover {
     filter: var(--hover-filter);
 }
 
-.hero_img {
-    width: 72%;
+.hero_img_desktop {
+    width: 66%;
     position: absolute;
-    right: -20%;
+    right: -19%;
     top: -16%;
 }
 
