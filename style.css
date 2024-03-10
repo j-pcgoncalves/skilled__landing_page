@@ -35,7 +35,7 @@
     padding: 24px 165px;
 }
 
-.logo {
+.nav_logo {
     font-weight: var(--extra-bold);
     font-size: var(--heading-m);
     color: var(--primary-color);
@@ -160,5 +160,33 @@
 }
 
 .card_btn:hover {
+    filter: var(--hover-filter);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 165px;
+    background-color: var(--primary-color);
+}
+
+.footer_logo {
+    color: #FFF;
+    font-size: var(--heading-m);
+    font-weight: var(--extra-bold);
+}
+
+.footer_btn {
+    background: linear-gradient(to bottom, #4851FF, #F02AA6);
+    border-radius: var(--btn-radius);
+    padding: var(--btn-padding);
+    color: #FFF;
+    font-weight: var(--bold);
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.footer_btn:hover {
     filter: var(--hover-filter);
 }
