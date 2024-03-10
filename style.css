@@ -17,6 +17,7 @@
     --btn-radius: 30px;
     --main-transition: all 0.2s ease-in;
     --hover-filter: opacity(0.8);
+    --card-padding: 64px 32px 40px 32px;
 }
 
 * {
@@ -43,6 +44,7 @@
 .btn_nav {
     background-color: var(--primary-color);
     color: #FFF;
+    font-weight: var(--bold);
     padding: var(--btn-padding);
     border-radius: var(--btn-radius);
     cursor: pointer;
@@ -73,6 +75,7 @@
     font-size: var(--body-m);
     font-weight: var(--medium);
     margin-bottom: 40px;
+    line-height: 28px;
 }
 
 .hero_btn {
@@ -83,6 +86,7 @@
     background: linear-gradient(to top, #F02AA6, #FF6848);
     color: #FFF;
     width: 33%;
+    font-weight: var(--bold);
 }
 
 .hero_btn:hover {
@@ -99,4 +103,62 @@
 /* COURSES */
 .courses {
     margin-top: 226px;
+    background: linear-gradient(to bottom, #FFF, #F0F1FF);
+    padding: 24px 165px 140px 165px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px 30px;
+}
+
+.course_card_main {
+    padding: var(--card-padding);
+    background: linear-gradient(to top, #F02AA6, #FF6848);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.card_main_title {
+    font-size: var(--heading-m);
+    font-weight: var(--extra-bold);
+    width: 80%;
+}
+
+.course_card_secondary {
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: var(--card-padding);
+    position: relative;
+}
+
+.icon_container {
+    position: absolute;
+    top: -8%;
+}
+
+.card_title {
+    font-size: var(--heading-s);
+    font-weight: var(--extra-bold);
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.card_body {
+    font-size: var(--body-s);
+    font-weight: var(--medium);
+    color: var(--secondary-color);
+    height: 110px;
+    margin-bottom: 24px;
+    line-height: 28px;
+}
+
+.card_btn {
+    font-weight: var(--bold);
+    color: #F74780;
+    cursor: pointer;
+    transition: var(--main-transition);
+    width: 30%;
+}
+
+.card_btn:hover {
+    filter: var(--hover-filter);
 }
