@@ -56,7 +56,7 @@
 
 /* HERO */
 .hero_text {
-    margin-top: 68.6px;
+    margin-top: 185px;
     width: 30%;
     margin-left: 165px;
 }
@@ -82,7 +82,7 @@
     cursor: pointer;
     background: linear-gradient(to top, #F02AA6, #FF6848);
     color: #FFF;
-    width: 33%;
+    width: 34%;
 }
 
 .hero_btn:hover {
@@ -90,8 +90,13 @@
 }
 
 .hero_img {
-    width: 50%;
+    width: 72%;
     position: absolute;
-    right: -14%;
-    top: -12%;
+    right: -20%;
+    top: -16%;
+}
+
+/* COURSES */
+.courses {
+    margin-top: 226px;
 }
