@@ -93,7 +93,7 @@ body {
     cursor: pointer;
     background: linear-gradient(to top, #F02AA6, #FF6848);
     color: #FFF;
-    width: 33%;
+    width: 34%;
     font-weight: var(--bold);
 }
 
@@ -172,7 +172,7 @@ body {
     color: #F74780;
     cursor: pointer;
     transition: var(--main-transition);
-    width: 30%;
+    width: 31%;
 }
 
 .card_btn:hover {
