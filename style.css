@@ -17,7 +17,7 @@
     --btn-radius: 30px;
     --main-transition: all 0.2s ease-in;
     --hover-filter: brightness(1.2);
-    --card-padding: 64px 32px 40px 32px;
+    --card-padding: 64px 21px 40px 21px;
 }
 
 * {
@@ -28,6 +28,10 @@
 }
 
 body {
+    overflow-x: hidden;
+}
+
+.wrapper {
     overflow-x: hidden;
 }
 
@@ -102,6 +106,14 @@ body {
     position: absolute;
     right: -19%;
     top: -16%;
+}
+
+.hero_img_tablet {
+    display: none;
+}
+
+.hero_img_mobile {
+    display: none;
 }
 
 /* COURSES */
@@ -194,4 +206,67 @@ footer {
 
 .footer_btn:hover {
     filter: var(--hover-filter);
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET: 768px */
+@media only screen and (max-width: 768px) {
+    .main_nav {
+        padding: 24px 40px;
+    }
+
+    .hero_img_desktop {
+        display: none;
+    }
+
+    .hero_img_tablet {
+        display: block;
+        width: 88%;
+        position: absolute;
+        right: -35%;
+        top: -6%;
+        overflow-x: hidden;
+    }
+
+    .hero_img_mobile {
+        display: none;
+    }
+
+    .hero_text {
+        margin-left: 40px;
+        margin-top: 99px;
+        width: 50%;
+    }
+
+    .hero_body {
+        font-size: var(--body-s);
+    }
+
+    .hero_title {
+        font-size: var(--heading-l);
+    }
+
+    .hero_btn {
+        width: 41%;
+    }
+
+    .courses {
+        padding: 24px 40px 86px 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px 11px;
+    }
+
+    .card_main_title {
+        font-size: var(--heading-s);
+        width: 90%;
+    }
+
+    .card_btn {
+        width: 35%;
+    }
+
+    footer {
+        padding: 32px 40px;
+    }
 }
