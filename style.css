@@ -229,10 +229,6 @@ footer {
         overflow-x: hidden;
     }
 
-    .hero_img_mobile {
-        display: none;
-    }
-
     .hero_text {
         margin-left: 40px;
         margin-top: 99px;
@@ -268,5 +264,46 @@ footer {
 
     footer {
         padding: 32px 40px;
+    }
+}
+
+/* MOBILE: 375px */
+@media only screen and (max-width: 376px) {
+    .main_nav {
+        padding: 16px 16px;
+    }
+
+    .hero_text {
+        margin-left: 16px;
+        width: 100%;
+        margin-top: 38px;
+    }
+
+    .hero_img_tablet {
+        display: none;
+    }
+
+    .hero_img_mobile {
+        display: block;
+        width: 100%;
+        margin-top: 46px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+        padding: 24px 16px 80px 16px;
+    }
+
+    .card_main_title {
+        width: 100%;
+    }
+
+    .course_card_main {
+        padding: 24px 29px 32px 29px;
+    }
+
+    footer {
+        padding: 32px 16px;
     }
 }
